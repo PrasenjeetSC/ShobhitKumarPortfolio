@@ -4,92 +4,287 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video Editor Portfolio</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body class="bg-neutral-950 text-neutral-100 antialiased">
 
-<!-- Hero Section -->
-<section class="relative h-screen w-full flex items-center">
-  <!-- Background placeholder -->
-  <div class="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900"></div>
+<!-- HERO SECTION -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
 
-  <!-- Overlay -->
+  <!-- HERO VIDEO (LOCAL ASSET) -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <!-- ADD SOURCES LATER -->
+    <!-- <source src="/assets/video/hero.webm" type="video/webm"> -->
+    <source src="/assets/video/hero-reel.mp4" type="video/mp4">
+  </video>
+
+  <!-- GRADIENT OVERLAY -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"></div>
+
+  <!-- HERO CONTENT -->
   <div class="relative z-10 max-w-2xl px-8 md:px-20">
-    <h1 class="text-4xl md:text-6xl font-semibold leading-tight">
-      High-Impact Video Editing<br />
+    <h1 class="text-4xl md:text-6xl font-semibold leading-tight reveal">
+      High-Impact Video Editing<br>
       for Events, Weddings & Brands
     </h1>
 
-    <p class="mt-6 text-lg text-neutral-300">
+    <p class="mt-6 text-lg text-neutral-300 reveal">
       Teasers, trailers & reels that cut on beat and hold attention.
     </p>
 
-    <div class="mt-10">
-      <a href="#work" class="inline-block border border-neutral-300 px-6 py-3 text-sm tracking-wide hover:bg-neutral-100 hover:text-neutral-900 transition">
+    <div class="mt-10 reveal">
+      <a href="#work"
+         class="inline-block border border-neutral-300 px-6 py-3 text-sm tracking-wide
+                transition hover:bg-neutral-100 hover:text-neutral-900">
         View Work ↓
       </a>
     </div>
   </div>
 
-  <!-- Scroll indicator -->
+  <!-- SCROLL INDICATOR -->
   <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400 text-sm animate-pulse">
     ↓
   </div>
 </section>
 
-<!-- Signature Work -->
+<!-- SIGNATURE WORK -->
 <section id="work" class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium">Signature Work</h2>
-  <p class="mt-4 text-neutral-400 max-w-xl">
+  <h2 class="text-3xl md:text-4xl font-medium reveal">Signature Work</h2>
+  <p class="mt-4 text-neutral-400 max-w-xl reveal">
     A selection of high-impact edits across weddings, events and brand content.
   </p>
 
-  <!-- Category -->
-  <div class="mt-16">
+  <!-- CATEGORY 1 -->
+  <div class="mt-16 reveal">
     <h3 class="text-xl mb-6">Wedding Teasers & Trailers</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
+
+    <!-- MOBILE: HORIZONTAL SCROLL -->
+    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+
+      <!-- VIDEO 1 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/nydsypcuHZ0"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Wedding Trailer</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/ecKPQBmnHrg"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Wedding Teaser</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/IdGm8I5oK-0"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Wedding Highlight</span>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <div class="mt-16">
+  
+  <!-- CATEGORY 2 -->
+  <div class="mt-24 reveal">
     <h3 class="text-xl mb-6">Event Aftermovies</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
+
+    <!-- MOBILE: HORIZONTAL SCROLL -->
+    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+
+      <!-- VIDEO 1 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/ryIz5jiT6Pc"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Festival Aftermovie</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/WwnBGleJF3Q"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Multi-Day Event Coverage</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/xbCmyvG3WJc"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Cultural Event</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- CATEGORY 3 -->
+  <div class="mt-24 reveal">
+    <h3 class="text-xl mb-6">Brand & Real Estate Reels</h3>
+
+    <!-- MOBILE: HORIZONTAL SCROLL -->
+    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+
+      <!-- VIDEO 1 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/-xVW8qjZLPs?si=VSgLC-07AaORuuJE"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Real Estate Walkthrough</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://www.youtube.com/embed/fS4cH2fky5M"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Brand Promo Reel</span>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+        <iframe
+          src="https://youtube.com/embed/cx6V1vOEKwg"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                    flex items-end p-4 pointer-events-none">
+          <span class="text-sm">Instagram Reel</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="mt-16">
-    <h3 class="text-xl mb-6">Brand & Real Estate Reels</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-      <div class="aspect-video bg-neutral-800 flex items-center justify-center text-neutral-500">VIDEO</div>
-    </div>
-  </div>
 </section>
 
-<!-- What I do best Section-->
+<!-- WHAT I DO BEST -->
 <section class="py-24 px-8 md:px-20 bg-neutral-900">
-  <h2 class="text-3xl md:text-4xl font-medium">What I Do Best</h2>
+  <h2 class="text-3xl md:text-4xl font-medium reveal">What I Do Best</h2>
 
   <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-neutral-300">
-    <p>High-energy cuts & seamless transitions</p>
-    <p>Beat-driven edits that hold attention</p>
-    <p>Multi-camera event workflows</p>
-    <p>Short-form reels & cinematic trailers</p>
+    <p class="reveal">High-energy cuts & seamless transitions</p>
+    <p class="reveal">Beat-driven edits that hold attention</p>
+    <p class="reveal">Multi-camera event workflows</p>
+    <p class="reveal">Short-form reels & cinematic trailers</p>
   </div>
 </section>
 
-<!-- Experience Section-->
+<!-- EXPERIENCE -->
 <section class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium">Experience</h2>
+  <h2 class="text-3xl md:text-4xl font-medium reveal">Experience</h2>
 
-  <ul class="mt-10 space-y-4 text-neutral-300">
+  <!-- LOGO STRIP -->
+  <div class="mt-8 flex gap-8 items-center opacity-70 reveal">
+    <!-- PLACEHOLDER LOGOS -->
+    <div class="h-10 w-24 bg-neutral-800 flex items-center justify-center text-xs">JAPAN</div>
+    <div class="h-10 w-24 bg-neutral-800 flex items-center justify-center text-xs">ISRAEL</div>
+  </div>
+
+  <ul class="mt-10 space-y-4 text-neutral-300 reveal">
     <li>• Multi-day festival coverage – Japanese Embassy</li>
     <li>• Event production – Israeli Embassy</li>
     <li>• 2+ years in wedding & event post-production</li>
@@ -97,31 +292,44 @@
   </ul>
 </section>
 
-<!-- Workfow Section -->
+<!-- WORKFLOW -->
 <section class="py-24 px-8 md:px-20 bg-neutral-900">
-  <h2 class="text-3xl md:text-4xl font-medium">Workflow</h2>
+  <h2 class="text-3xl md:text-4xl font-medium reveal">Workflow</h2>
 
   <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-neutral-300">
-    <div>1. Footage & references</div>
-    <div>2. Music & mood</div>
-    <div>3. First cut</div>
-    <div>4. Revisions & delivery</div>
+    <div class="reveal">
+      📁<br>Footage & references
+    </div>
+    <div class="reveal">
+      🎵<br>Music & mood
+    </div>
+    <div class="reveal">
+      ✂️<br>First cut
+    </div>
+    <div class="reveal">
+      📦<br>Revisions & delivery
+    </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- CONTACT -->
 <section class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium">Let’s Work Together</h2>
+  <h2 class="text-3xl md:text-4xl font-medium reveal">Let’s Work Together</h2>
 
-  <form class="mt-12 max-w-xl space-y-6">
-    <input type="text" placeholder="Name" class="w-full bg-neutral-800 p-3 outline-none" />
-    <input type="email" placeholder="Email or WhatsApp" class="w-full bg-neutral-800 p-3 outline-none" />
-    <select class="w-full bg-neutral-800 p-3 outline-none">
+  <!-- TESTIMONIAL -->
+  <p class="mt-6 max-w-xl text-neutral-400 reveal">
+    “The edits were impactful, perfectly timed, and elevated the entire event.”
+  </p>
+
+  <form class="mt-12 max-w-xl space-y-6 reveal">
+    <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500" placeholder="Name">
+    <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500" placeholder="Email or WhatsApp">
+    <select class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500">
       <option>Wedding</option>
       <option>Event</option>
       <option>Brand / Reel</option>
     </select>
-    <textarea placeholder="Message (optional)" class="w-full bg-neutral-800 p-3 outline-none"></textarea>
+    <textarea class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500" placeholder="Message (optional)"></textarea>
 
     <button class="border border-neutral-300 px-6 py-3 hover:bg-neutral-100 hover:text-neutral-900 transition">
       Send Message
@@ -129,10 +337,27 @@
   </form>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="py-10 px-8 md:px-20 text-neutral-500 text-sm">
-  © Video Editor · High-Impact Editing
+  © Shobhit Kumar · High-Impact Video Editing
 </footer>
+
+<!-- SCROLL REVEAL SCRIPT -->
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
+	
