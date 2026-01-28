@@ -24,6 +24,17 @@
 
 <body class="bg-neutral-950 text-neutral-100 antialiased">
 
+<!-- MINIMAL NAV -->
+<nav id="miniNav"
+     class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur
+            opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="px-8 md:px-20 py-4 flex gap-8 text-sm text-neutral-200">
+    <a href="#work" class="hover:text-white transition">Work</a>
+    <a href="#experience" class="hover:text-white transition">Experience</a>
+    <a href="#contact" class="hover:text-white transition">Contact</a>
+  </div>
+</nav>
+
 <!-- HERO SECTION -->
 <section class="relative h-screen w-full flex items-center overflow-hidden">
 
@@ -264,56 +275,113 @@
 <!-- WHAT I DO BEST -->
 <section class="py-24 px-8 md:px-20 bg-neutral-900">
   <h2 class="text-3xl md:text-4xl font-medium reveal">What I Do Best</h2>
+  <p class="mt-4 text-neutral-400 max-w-xl reveal">
+    Core strengths developed through real-world projects and high-pressure timelines.
+  </p>
 
-  <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-neutral-300">
-    <p class="reveal">High-energy cuts & seamless transitions</p>
-    <p class="reveal">Beat-driven edits that hold attention</p>
-    <p class="reveal">Multi-camera event workflows</p>
-    <p class="reveal">Short-form reels & cinematic trailers</p>
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Capability Card -->
+    <div class="border border-neutral-800 p-8 reveal">
+      <h3 class="text-lg font-medium mb-3">High-Energy Cuts & Transitions</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">
+        Fast, precise edits that maintain flow, momentum, and emotional continuity without feeling rushed.
+      </p>
+    </div>
+
+    <div class="border border-neutral-800 p-8 reveal">
+      <h3 class="text-lg font-medium mb-3">Beat-Driven Editing</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">
+        Visual rhythm synced tightly to music for maximum impact, especially in teasers and trailers.
+      </p>
+    </div>
+
+    <div class="border border-neutral-800 p-8 reveal">
+      <h3 class="text-lg font-medium mb-3">Multi-Camera Event Workflows</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">
+        Confident handling of complex timelines involving multiple cameras, long durations, and live environments.
+      </p>
+    </div>
+
+    <div class="border border-neutral-800 p-8 reveal">
+      <h3 class="text-lg font-medium mb-3">Short-Form & Cinematic Reels</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">
+        High-retention edits designed for Instagram, brand promos, and quick audience engagement.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="py-24 px-8 md:px-20">
+<section id="experience" class="py-24 px-8 md:px-20">
   <h2 class="text-3xl md:text-4xl font-medium reveal">Experience</h2>
+  <p class="mt-4 text-neutral-400 max-w-xl reveal">
+    Selected high-profile projects and long-form event coverage.
+  </p>
 
-  <!-- LOGO STRIP -->
-  <div class="mt-8 flex gap-8 items-center opacity-70 reveal">
-    <!-- PLACEHOLDER LOGOS -->
-    <div class="h-10 w-24 bg-neutral-800 flex items-center justify-center text-xs">JAPAN</div>
-    <div class="h-10 w-24 bg-neutral-800 flex items-center justify-center text-xs">ISRAEL</div>
+  <!-- AUTHORITY BADGES -->
+  <div class="mt-10 flex gap-4 flex-wrap reveal">
+    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">JAPANESE EMBASSY</div>
+    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">ISRAELI EMBASSY</div>
+    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">MULTI-DAY EVENTS</div>
   </div>
 
-  <ul class="mt-10 space-y-4 text-neutral-300 reveal">
-    <li>• Multi-day festival coverage – Japanese Embassy</li>
-    <li>• Event production – Israeli Embassy</li>
-    <li>• 2+ years in wedding & event post-production</li>
-    <li>• Experienced with large crowds & multi-camera setups</li>
+  <!-- EXPERIENCE DETAILS -->
+  <ul class="mt-12 space-y-4 text-neutral-300 reveal max-w-2xl">
+    <li>• Multi-day festival coverage involving large crowds and live coordination</li>
+    <li>• Event production and post-production for embassy-led cultural programs</li>
+    <li>• 2+ years of continuous work in wedding and event post-production</li>
+    <li>• Experience working alongside production teams and camera crews</li>
   </ul>
 </section>
 
 <!-- WORKFLOW -->
 <section class="py-24 px-8 md:px-20 bg-neutral-900">
   <h2 class="text-3xl md:text-4xl font-medium reveal">Workflow</h2>
+  <p class="mt-4 text-neutral-400 max-w-xl reveal">
+    A structured, transparent process focused on clarity and creative alignment.
+  </p>
 
-  <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-neutral-300">
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-neutral-300">
+
     <div class="reveal">
-      📁<br>Footage & references
+      <div class="text-sm text-neutral-500 mb-2">01</div>
+      <h3 class="text-lg font-medium mb-2">Footage & References</h3>
+      <p class="text-sm text-neutral-400">
+        Client footage, references, and expectations are reviewed and aligned.
+      </p>
     </div>
+
     <div class="reveal">
-      🎵<br>Music & mood
+      <div class="text-sm text-neutral-500 mb-2">02</div>
+      <h3 class="text-lg font-medium mb-2">Music & Mood</h3>
+      <p class="text-sm text-neutral-400">
+        Audio direction and emotional tone are established early in the process.
+      </p>
     </div>
+
     <div class="reveal">
-      ✂️<br>First cut
+      <div class="text-sm text-neutral-500 mb-2">03</div>
+      <h3 class="text-lg font-medium mb-2">First Cut</h3>
+      <p class="text-sm text-neutral-400">
+        A complete first draft focusing on pacing, structure, and impact.
+      </p>
     </div>
+
     <div class="reveal">
-      📦<br>Revisions & delivery
+      <div class="text-sm text-neutral-500 mb-2">04</div>
+      <h3 class="text-lg font-medium mb-2">Revisions & Delivery</h3>
+      <p class="text-sm text-neutral-400">
+        Feedback is incorporated and final assets are delivered in required formats.
+      </p>
     </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="py-24 px-8 md:px-20">
+<section id="contact" class="py-24 px-8 md:px-20">
   <h2 class="text-3xl md:text-4xl font-medium reveal">Let’s Work Together</h2>
 
   <!-- TESTIMONIAL -->
@@ -356,6 +424,19 @@
   }, { threshold: 0.15 });
 
   reveals.forEach(el => observer.observe(el));
+</script>
+
+<!-- NAVBAR FADE IN SCRIPT -->
+<script>
+  const nav = document.getElementById('miniNav');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      nav.classList.remove('opacity-0', 'pointer-events-none');
+    } else {
+      nav.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
 </script>
 
 </body>
