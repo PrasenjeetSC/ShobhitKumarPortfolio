@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BASIC META TAGS -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Editor Portfolio</title>
+  
+  <!-- TITLE & DESCRIPTION -->
+  <title>Shobhit Kumar – Video Editor for Weddings, Events & Brands</title>
 
+  <meta name="description"
+        content="High-impact video editor specializing in wedding teasers, event aftermovies, and brand reels. Trusted on embassy-led and large-scale productions." />
+  
+  <!-- CANONICAL URL -->
+  <link rel="canonical" href="https://shobhitk.pages.dev/" />
+
+  <!-- FAVICONS -->
+  <link rel="icon" href="/assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/icons/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shobhit Kumar – High-Impact Video Editor" />
+  <meta property="og:description"
+        content="Wedding teasers, event aftermovies, and brand reels that cut on beat and hold attention." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shobhitk.pages.dev/" />
+  <meta property="og:image" content="https://shobhitk.pages.dev/assets/og/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shobhit Kumar – High-Impact Video Editor" />
+  <meta name="twitter:description"
+        content="Wedding teasers, event aftermovies, and brand reels that cut on beat and hold attention." />
+  <meta name="twitter:image" content="https://shobhitk.pages.dev/assets/og/og-image.jpg" />
+
+  <!-- TAILWIND CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- GLOBAL STYLES -->
   <style>
     html { scroll-behavior: smooth; }
 
@@ -20,7 +53,7 @@
       transform: translateY(0);
     }
 	
-	<!-- SCROLLSPY CSS -->
+	  /*-- SCROLLSPY CSS --*/
     .nav-link.active {
       color: white;
       position: relative;
@@ -39,509 +72,528 @@
     }
   </style>
 
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shobhit Kumar",
+    "jobTitle": "Video Editor",
+    "url": "https://shobhitk.pages.dev",
+    "sameAs": [
+      "https://www.instagram.com/edit_the_moment_",
+      "https://www.youtube.com/@shobhitkumar6118",
+      "https://www.linkedin.com/in/shobhit-kumar-a99b3a252"
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="bg-neutral-950 text-neutral-100 antialiased">
 
-<!-- MINIMAL NAV -->
-<nav id="miniNav"
-     class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur
-            opacity-0 pointer-events-none transition-opacity duration-300">
-  <div class="px-8 md:px-20 py-4 flex gap-8 text-sm text-neutral-200">
-    <a href="#work" data-section="work" class="nav-link transition">Work</a>
-    <a href="#experience" data-section="experience" class="nav-link transition">Experience</a>
-    <a href="#contact" data-section="contact" class="nav-link transition">Contact</a>
-  </div>
-</nav>
+<header>
+  <!-- MINIMAL NAV -->
+  <nav id="miniNav"
+      class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur
+              opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="px-8 md:px-20 py-4 flex gap-8 text-sm text-neutral-200">
+      <a href="#work" data-section="work" class="nav-link transition">Work</a>
+      <a href="#experience" data-section="experience" class="nav-link transition">Experience</a>
+      <a href="#contact" data-section="contact" class="nav-link transition">Contact</a>
+    </div>
+  </nav>
+</header>
 
-<!-- HERO SECTION -->
-<section class="relative h-screen w-full flex items-center overflow-hidden">
+<main>
+  <!-- HERO SECTION -->
+  <section class="relative h-screen w-full flex items-center overflow-hidden">
 
-  <!-- HERO VIDEO (LOCAL ASSET) -->
-  <video
-    class="absolute inset-0 w-full h-full object-cover"
-    autoplay
-    muted
-    loop
-    playsinline
-  >
-    <!-- ADD SOURCES LATER -->
-    <!-- <source src="/assets/video/hero.webm" type="video/webm"> -->
-    <source src="/assets/video/hero-reel.mp4" type="video/mp4">
-  </video>
+    <!-- HERO VIDEO (LOCAL ASSET) -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover"
+      autoplay
+      muted
+      loop
+      playsinline
+    >
+      <source src="/assets/video/hero-reel.webm" type="video/webm">
+      <source src="/assets/video/hero-reel.mp4" type="video/mp4">
+    </video>
 
-  <!-- GRADIENT OVERLAY -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"></div>
+    <!-- GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"></div>
 
-  <!-- HERO CONTENT -->
-  <div class="relative z-10 max-w-2xl px-8 md:px-20">
-    <h1 class="text-4xl md:text-6xl font-semibold leading-tight reveal">
-      High-Impact Video Editing<br>
-      for Events, Weddings & Brands
-    </h1>
+    <!-- HERO CONTENT -->
+    <div class="relative z-10 max-w-2xl px-8 md:px-20">
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight reveal">
+        High-Impact Video Editing<br>
+        for Events, Weddings & Brands
+      </h1>
 
-    <p class="mt-6 text-lg text-neutral-300 reveal">
-      Teasers, trailers & reels that cut on beat and hold attention.
+      <p class="mt-6 text-lg text-neutral-300 reveal">
+        Teasers, trailers & reels that cut on beat and hold attention.
+      </p>
+
+      <div class="mt-10 reveal">
+        <a href="#work"
+          class="inline-block border border-neutral-300 px-6 py-3 text-sm tracking-wide
+                  transition hover:bg-neutral-100 hover:text-neutral-900">
+          View Work ↓
+        </a>
+      </div>
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400 text-sm animate-pulse">
+      ↓
+    </div>
+  </section>
+
+  <!-- SIGNATURE WORK -->
+  <section id="work" class="py-24 px-8 md:px-20">
+    <h2 class="text-3xl md:text-4xl font-medium reveal">Signature Work</h2>
+    <p class="mt-4 text-neutral-400 max-w-xl reveal">
+      A selection of high-impact edits across weddings, events and brand content.
     </p>
 
-    <div class="mt-10 reveal">
-      <a href="#work"
-         class="inline-block border border-neutral-300 px-6 py-3 text-sm tracking-wide
-                transition hover:bg-neutral-100 hover:text-neutral-900">
-        View Work ↓
-      </a>
-    </div>
-  </div>
+    <!-- CATEGORY 1 -->
+    <div class="mt-16 reveal">
+      <h3 class="text-xl mb-6">Wedding Teasers & Trailers</h3>
 
-  <!-- SCROLL INDICATOR -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400 text-sm animate-pulse">
-    ↓
-  </div>
-</section>
+      <!-- MOBILE: HORIZONTAL SCROLL -->
+      <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
 
-<!-- SIGNATURE WORK -->
-<section id="work" class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium reveal">Signature Work</h2>
-  <p class="mt-4 text-neutral-400 max-w-xl reveal">
-    A selection of high-impact edits across weddings, events and brand content.
-  </p>
+        <!-- VIDEO 1 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/nydsypcuHZ0"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
 
-  <!-- CATEGORY 1 -->
-  <div class="mt-16 reveal">
-    <h3 class="text-xl mb-6">Wedding Teasers & Trailers</h3>
-
-    <!-- MOBILE: HORIZONTAL SCROLL -->
-    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
-
-      <!-- VIDEO 1 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/nydsypcuHZ0"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Wedding Trailer</span>
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Wedding Trailer</span>
+          </div>
         </div>
+
+        <!-- VIDEO 2 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/ecKPQBmnHrg"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Wedding Teaser</span>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/IdGm8I5oK-0"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Wedding Highlight</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- CATEGORY 2 -->
+    <div class="mt-24 reveal">
+      <h3 class="text-xl mb-6">Event Aftermovies</h3>
+
+      <!-- MOBILE: HORIZONTAL SCROLL -->
+      <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+
+        <!-- VIDEO 1 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/ryIz5jiT6Pc"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Festival Aftermovie</span>
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/WwnBGleJF3Q"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Multi-Day Event Coverage</span>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/xbCmyvG3WJc"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Cultural Event</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- CATEGORY 3 -->
+    <div class="mt-24 reveal">
+      <h3 class="text-xl mb-6">Brand & Real Estate Reels</h3>
+
+      <!-- MOBILE: HORIZONTAL SCROLL -->
+      <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+
+        <!-- VIDEO 1 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/-xVW8qjZLPs?si=VSgLC-07AaORuuJE"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Real Estate Walkthrough</span>
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://www.youtube.com/embed/fS4cH2fky5M"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Brand Promo Reel</span>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
+          <iframe
+            src="https://youtube.com/embed/cx6V1vOEKwg"
+            class="absolute inset-0 w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
+                      flex items-end p-4 pointer-events-none">
+            <span class="text-sm">Instagram Reel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WHAT I DO BEST -->
+  <section class="py-24 px-8 md:px-20 bg-neutral-900">
+    <h2 class="text-3xl md:text-4xl font-medium reveal">What I Do Best</h2>
+    <p class="mt-4 text-neutral-400 max-w-xl reveal">
+      Core strengths developed through real-world projects and high-pressure timelines.
+    </p>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Capability Card -->
+      <div class="border border-neutral-800 p-8 reveal">
+        <h3 class="text-lg font-medium mb-3">High-Energy Cuts & Transitions</h3>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Fast, precise edits that maintain flow, momentum, and emotional continuity without feeling rushed.
+        </p>
       </div>
 
-      <!-- VIDEO 2 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/ecKPQBmnHrg"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Wedding Teaser</span>
-        </div>
+      <div class="border border-neutral-800 p-8 reveal">
+        <h3 class="text-lg font-medium mb-3">Beat-Driven Editing</h3>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Visual rhythm synced tightly to music for maximum impact, especially in teasers and trailers.
+        </p>
       </div>
 
-      <!-- VIDEO 3 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/IdGm8I5oK-0"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      <div class="border border-neutral-800 p-8 reveal">
+        <h3 class="text-lg font-medium mb-3">Multi-Camera Event Workflows</h3>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Confident handling of complex timelines involving multiple cameras, long durations, and live environments.
+        </p>
+      </div>
 
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Wedding Highlight</span>
-        </div>
+      <div class="border border-neutral-800 p-8 reveal">
+        <h3 class="text-lg font-medium mb-3">Short-Form & Cinematic Reels</h3>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          High-retention edits designed for Instagram, brand promos, and quick audience engagement.
+        </p>
       </div>
 
     </div>
-  </div>
-  
-  <!-- CATEGORY 2 -->
-  <div class="mt-24 reveal">
-    <h3 class="text-xl mb-6">Event Aftermovies</h3>
+  </section>
 
-    <!-- MOBILE: HORIZONTAL SCROLL -->
-    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-24 px-8 md:px-20">
+    <h2 class="text-3xl md:text-4xl font-medium reveal">Experience</h2>
+    <p class="mt-4 text-neutral-400 max-w-xl reveal">
+      Selected high-profile projects and long-form event coverage.
+    </p>
 
-      <!-- VIDEO 1 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/ryIz5jiT6Pc"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Festival Aftermovie</span>
-        </div>
-      </div>
-
-      <!-- VIDEO 2 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/WwnBGleJF3Q"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Multi-Day Event Coverage</span>
-        </div>
-      </div>
-
-      <!-- VIDEO 3 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/xbCmyvG3WJc"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Cultural Event</span>
-        </div>
-      </div>
-
+    <!-- AUTHORITY BADGES -->
+    <div class="mt-10 flex gap-4 flex-wrap reveal">
+      <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">JAPANESE EMBASSY</div>
+      <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">ISRAELI EMBASSY</div>
+      <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">MULTI-DAY EVENTS</div>
     </div>
-  </div>
-  
-  <!-- CATEGORY 3 -->
-  <div class="mt-24 reveal">
-    <h3 class="text-xl mb-6">Brand & Real Estate Reels</h3>
 
-    <!-- MOBILE: HORIZONTAL SCROLL -->
-    <div class="md:grid md:grid-cols-3 md:gap-6 flex gap-4 overflow-x-auto md:overflow-visible snap-x">
+    <!-- EXPERIENCE DETAILS -->
+    <ul class="mt-12 space-y-4 text-neutral-300 reveal max-w-2xl">
+      <li>• Multi-day festival coverage involving large crowds and live coordination</li>
+      <li>• Event production and post-production for embassy-led cultural programs</li>
+      <li>• 2+ years of continuous work in wedding and event post-production</li>
+      <li>• Experience working alongside production teams and camera crews</li>
+    </ul>
+  </section>
 
-      <!-- VIDEO 1 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/-xVW8qjZLPs?si=VSgLC-07AaORuuJE"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+  <!-- WORKFLOW -->
+  <section class="py-24 px-8 md:px-20 bg-neutral-900">
+    <h2 class="text-3xl md:text-4xl font-medium reveal">Workflow</h2>
+    <p class="mt-4 text-neutral-400 max-w-xl reveal">
+      A structured, transparent process focused on clarity and creative alignment.
+    </p>
 
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Real Estate Walkthrough</span>
-        </div>
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-neutral-300">
+
+      <div class="reveal">
+        <div class="text-sm text-neutral-500 mb-2">01</div>
+        <h3 class="text-lg font-medium mb-2">Footage & References</h3>
+        <p class="text-sm text-neutral-400">
+          Client footage, references, and expectations are reviewed and aligned.
+        </p>
       </div>
 
-      <!-- VIDEO 2 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://www.youtube.com/embed/fS4cH2fky5M"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Brand Promo Reel</span>
-        </div>
+      <div class="reveal">
+        <div class="text-sm text-neutral-500 mb-2">02</div>
+        <h3 class="text-lg font-medium mb-2">Music & Mood</h3>
+        <p class="text-sm text-neutral-400">
+          Audio direction and emotional tone are established early in the process.
+        </p>
       </div>
 
-      <!-- VIDEO 3 -->
-      <div class="relative aspect-video min-w-[85%] md:min-w-0 bg-neutral-900 overflow-hidden group snap-center">
-        <iframe
-          src="https://youtube.com/embed/cx6V1vOEKwg"
-          class="absolute inset-0 w-full h-full"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      <div class="reveal">
+        <div class="text-sm text-neutral-500 mb-2">03</div>
+        <h3 class="text-lg font-medium mb-2">First Cut</h3>
+        <p class="text-sm text-neutral-400">
+          A complete first draft focusing on pacing, structure, and impact.
+        </p>
+      </div>
 
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition
-                    flex items-end p-4 pointer-events-none">
-          <span class="text-sm">Instagram Reel</span>
-        </div>
+      <div class="reveal">
+        <div class="text-sm text-neutral-500 mb-2">04</div>
+        <h3 class="text-lg font-medium mb-2">Revisions & Delivery</h3>
+        <p class="text-sm text-neutral-400">
+          Feedback is incorporated and final assets are delivered in required formats.
+        </p>
       </div>
 
     </div>
-  </div>
+  </section>
 
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-8 md:px-20">
+    <h2 class="text-3xl md:text-4xl font-medium reveal">Let’s Work Together</h2>
 
-<!-- WHAT I DO BEST -->
-<section class="py-24 px-8 md:px-20 bg-neutral-900">
-  <h2 class="text-3xl md:text-4xl font-medium reveal">What I Do Best</h2>
-  <p class="mt-4 text-neutral-400 max-w-xl reveal">
-    Core strengths developed through real-world projects and high-pressure timelines.
-  </p>
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
 
-  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- LEFT: FORM -->
+      <div class="md:col-span-7 reveal">
+        <p class="mb-6 max-w-xl text-neutral-400 italic">
+          “The edits were impactful, perfectly timed, and elevated the entire event.”
+        </p>
 
-    <!-- Capability Card -->
-    <div class="border border-neutral-800 p-8 reveal">
-      <h3 class="text-lg font-medium mb-3">High-Energy Cuts & Transitions</h3>
-      <p class="text-neutral-400 text-sm leading-relaxed">
-        Fast, precise edits that maintain flow, momentum, and emotional continuity without feeling rushed.
-      </p>
-    </div>
+        <form class="space-y-6 max-w-xl">
+          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                placeholder="Name">
+          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                placeholder="Email or WhatsApp">
+          <select class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500">
+            <option>Wedding</option>
+            <option>Event</option>
+            <option>Brand / Reel</option>
+          </select>
+          <textarea class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                    placeholder="Message (optional)"></textarea>
 
-    <div class="border border-neutral-800 p-8 reveal">
-      <h3 class="text-lg font-medium mb-3">Beat-Driven Editing</h3>
-      <p class="text-neutral-400 text-sm leading-relaxed">
-        Visual rhythm synced tightly to music for maximum impact, especially in teasers and trailers.
-      </p>
-    </div>
+          <button class="border border-neutral-300 px-6 py-3 hover:bg-neutral-100 hover:text-neutral-900 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
 
-    <div class="border border-neutral-800 p-8 reveal">
-      <h3 class="text-lg font-medium mb-3">Multi-Camera Event Workflows</h3>
-      <p class="text-neutral-400 text-sm leading-relaxed">
-        Confident handling of complex timelines involving multiple cameras, long durations, and live environments.
-      </p>
-    </div>
+      <!-- RIGHT: IDENTITY & DIRECT CONTACT (ACCENT CARD) -->
+      <div class="md:col-span-5 reveal">
+        <div class="p-8 space-y-8
+                    bg-[#1f1b0a]
+                    border border-[rgba(226,183,20,0.25)]">
 
-    <div class="border border-neutral-800 p-8 reveal">
-      <h3 class="text-lg font-medium mb-3">Short-Form & Cinematic Reels</h3>
-      <p class="text-neutral-400 text-sm leading-relaxed">
-        High-retention edits designed for Instagram, brand promos, and quick audience engagement.
-      </p>
-    </div>
+          <!-- NAME & ROLE -->
+          <div>
+            <h3 class="text-xl font-medium text-white">Shobhit Kumar</h3>
+            <p class="mt-1 text-sm text-neutral-300">
+              High-Impact Video Editor · Events & Short-Form
+            </p>
+          </div>
 
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium reveal">Experience</h2>
-  <p class="mt-4 text-neutral-400 max-w-xl reveal">
-    Selected high-profile projects and long-form event coverage.
-  </p>
-
-  <!-- AUTHORITY BADGES -->
-  <div class="mt-10 flex gap-4 flex-wrap reveal">
-    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">JAPANESE EMBASSY</div>
-    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">ISRAELI EMBASSY</div>
-    <div class="px-5 py-2 border border-neutral-800 text-sm tracking-wide">MULTI-DAY EVENTS</div>
-  </div>
-
-  <!-- EXPERIENCE DETAILS -->
-  <ul class="mt-12 space-y-4 text-neutral-300 reveal max-w-2xl">
-    <li>• Multi-day festival coverage involving large crowds and live coordination</li>
-    <li>• Event production and post-production for embassy-led cultural programs</li>
-    <li>• 2+ years of continuous work in wedding and event post-production</li>
-    <li>• Experience working alongside production teams and camera crews</li>
-  </ul>
-</section>
-
-<!-- WORKFLOW -->
-<section class="py-24 px-8 md:px-20 bg-neutral-900">
-  <h2 class="text-3xl md:text-4xl font-medium reveal">Workflow</h2>
-  <p class="mt-4 text-neutral-400 max-w-xl reveal">
-    A structured, transparent process focused on clarity and creative alignment.
-  </p>
-
-  <div class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-neutral-300">
-
-    <div class="reveal">
-      <div class="text-sm text-neutral-500 mb-2">01</div>
-      <h3 class="text-lg font-medium mb-2">Footage & References</h3>
-      <p class="text-sm text-neutral-400">
-        Client footage, references, and expectations are reviewed and aligned.
-      </p>
-    </div>
-
-    <div class="reveal">
-      <div class="text-sm text-neutral-500 mb-2">02</div>
-      <h3 class="text-lg font-medium mb-2">Music & Mood</h3>
-      <p class="text-sm text-neutral-400">
-        Audio direction and emotional tone are established early in the process.
-      </p>
-    </div>
-
-    <div class="reveal">
-      <div class="text-sm text-neutral-500 mb-2">03</div>
-      <h3 class="text-lg font-medium mb-2">First Cut</h3>
-      <p class="text-sm text-neutral-400">
-        A complete first draft focusing on pacing, structure, and impact.
-      </p>
-    </div>
-
-    <div class="reveal">
-      <div class="text-sm text-neutral-500 mb-2">04</div>
-      <h3 class="text-lg font-medium mb-2">Revisions & Delivery</h3>
-      <p class="text-sm text-neutral-400">
-        Feedback is incorporated and final assets are delivered in required formats.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-24 px-8 md:px-20">
-  <h2 class="text-3xl md:text-4xl font-medium reveal">Let’s Work Together</h2>
-
-  <div class="mt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-
-    <!-- LEFT: FORM -->
-    <div class="md:col-span-7 reveal">
-      <p class="mb-6 max-w-xl text-neutral-400 italic">
-        “The edits were impactful, perfectly timed, and elevated the entire event.”
-      </p>
-
-      <form class="space-y-6 max-w-xl">
-        <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-               placeholder="Name">
-        <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-               placeholder="Email or WhatsApp">
-        <select class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500">
-          <option>Wedding</option>
-          <option>Event</option>
-          <option>Brand / Reel</option>
-        </select>
-        <textarea class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-                  placeholder="Message (optional)"></textarea>
-
-        <button class="border border-neutral-300 px-6 py-3 hover:bg-neutral-100 hover:text-neutral-900 transition">
-          Send Message
-        </button>
-      </form>
-    </div>
-
-    <!-- RIGHT: IDENTITY & DIRECT CONTACT (ACCENT CARD) -->
-    <div class="md:col-span-5 reveal">
-      <div class="p-8 space-y-8
-                  bg-[#1f1b0a]
-                  border border-[rgba(226,183,20,0.25)]">
-
-        <!-- NAME & ROLE -->
+          <!-- CONTACT DETAILS -->
+      <div class="space-y-4 text-sm text-neutral-200">
         <div>
-          <h3 class="text-xl font-medium text-white">Shobhit Kumar</h3>
-          <p class="mt-1 text-sm text-neutral-300">
-            High-Impact Video Editor · Events & Short-Form
-          </p>
+        <p class="text-xs text-neutral-400 uppercase tracking-wide">Email</p>
+        <a href="mailto:shobhitk0674@gmail.com"
+          class="hover:text-[#e2b714] transition"
+          target="blank">
+          shobhitk0674@gmail.com
+        </a>
         </div>
 
-        <!-- CONTACT DETAILS -->
-		<div class="space-y-4 text-sm text-neutral-200">
-		  <div>
-			<p class="text-xs text-neutral-400 uppercase tracking-wide">Email</p>
-			<a href="mailto:shobhitk0674@gmail.com"
-			   class="hover:text-[#e2b714] transition"
-			   target="blank">
-			  shobhitk0674@gmail.com
-			</a>
-		  </div>
+        <div>
+        <p class="text-xs text-neutral-400 uppercase tracking-wide">
+          Phone / WhatsApp
+        </p>
+        <a href="tel:+917982605201"
+          class="hover:text-[#e2b714] transition"
+          target="blank">
+          +91 79826 05201
+        </a>
+        </div>
+      </div>
 
-		  <div>
-			<p class="text-xs text-neutral-400 uppercase tracking-wide">
-			  Phone / WhatsApp
-			</p>
-			<a href="tel:+917982605201"
-			   class="hover:text-[#e2b714] transition"
-			   target="blank">
-			  +91 79826 05201
-			</a>
-		  </div>
-		</div>
+      <!-- SOCIAL ICONS -->
+      <div class="pt-6 border-t border-[rgba(226,183,20,0.25)]">
+        <p class="text-xs text-neutral-400 uppercase tracking-wide mb-4">
+        Social
+        </p>
 
-		<!-- SOCIAL ICONS -->
-		<div class="pt-6 border-t border-[rgba(226,183,20,0.25)]">
-		  <p class="text-xs text-neutral-400 uppercase tracking-wide mb-4">
-			Social
-		  </p>
+        <div class="flex gap-6">
 
-		  <div class="flex gap-6">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/edit_the_moment_"
+            class="text-neutral-300 hover:text-[#e2b714] transition"
+          target="blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="18" cy="6" r="1"/>
+                </svg>
+              </a>
 
-			<!-- Instagram -->
-			<a href="https://www.instagram.com/edit_the_moment_"
-  			   class="text-neutral-300 hover:text-[#e2b714] transition"
-			   target="blank">
-			  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-			  	   stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="18" cy="6" r="1"/>
-              </svg>
-            </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/@shobhitkumar6118" 
+          class="text-neutral-300 hover:text-[#e2b714] transition"
+          target="blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.5 6.5s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9
+                          C17.7 3 12 3 12 3h0s-5.7 0-8.6.3
+              c-.4.1-1.3.1-2.1.9
+              C.7 4.9.5 6.5.5 6.5
+              S0 8.3 0 10v2
+              c0 1.7.5 3.5.5 3.5
+              s.2 1.6.8 2.3
+              c.8.8 1.9.8 2.4.9
+              1.7.2 8.3.3 8.3.3
+              s5.7 0 8.6-.3
+              c.4-.1 1.3-.1 2.1-.9
+              .6-.7.8-2.3.8-2.3
+              s.5-1.7.5-3.5v-2
+              c0-1.7-.5-3.5-.5-3.5z"/>
+          <path fill="#000" d="M9.75 14.02v-4.04l3.6 2.02-3.6 2.02z"/>
+          </svg>
+        </a>
 
-			<!-- YouTube -->
-			<a href="https://youtube.com/@shobhitkumar6118" 
-			   class="text-neutral-300 hover:text-[#e2b714] transition"
-			   target="blank">
-			  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-				<path d="M23.5 6.5s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9
-                         C17.7 3 12 3 12 3h0s-5.7 0-8.6.3
-						 c-.4.1-1.3.1-2.1.9
-						 C.7 4.9.5 6.5.5 6.5
-						 S0 8.3 0 10v2
-						 c0 1.7.5 3.5.5 3.5
-						 s.2 1.6.8 2.3
-						 c.8.8 1.9.8 2.4.9
-						 1.7.2 8.3.3 8.3.3
-						 s5.7 0 8.6-.3
-						 c.4-.1 1.3-.1 2.1-.9
-						 .6-.7.8-2.3.8-2.3
-						 s.5-1.7.5-3.5v-2
-						 c0-1.7-.5-3.5-.5-3.5z"/>
-				<path fill="#000" d="M9.75 14.02v-4.04l3.6 2.02-3.6 2.02z"/>
-			  </svg>
-			</a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/shobhit-kumar-a99b3a252" 
+          class="text-neutral-300 hover:text-[#e2b714] transition"
+          target="blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6
+                          1.12 6 0 4.88 0 3.5
+              0 2.12 1.12 1 2.5 1
+              3.88 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8.5 8h3.8v2.2h.1
+              c.5-.9 1.8-1.8 3.7-1.8
+              4 0 4.7 2.6 4.7 6V24h-4v-7.4
+              c0-1.8 0-4.1-2.5-4.1
+              -2.5 0-2.9 1.9-2.9 4V24h-4z"/>
+          </svg>
+        </a>
 
-			<!-- LinkedIn -->
-			<a href="https://www.linkedin.com/in/shobhit-kumar-a99b3a252" 
-			   class="text-neutral-300 hover:text-[#e2b714] transition"
-			   target="blank">
-			  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-				<path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6
-                         1.12 6 0 4.88 0 3.5
-						 0 2.12 1.12 1 2.5 1
-						 3.88 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8.5 8h3.8v2.2h.1
-						 c.5-.9 1.8-1.8 3.7-1.8
-						 4 0 4.7 2.6 4.7 6V24h-4v-7.4
-						 c0-1.8 0-4.1-2.5-4.1
-						 -2.5 0-2.9 1.9-2.9 4V24h-4z"/>
-			  </svg>
-			</a>
+        </div>
+      </div>
 
-		  </div>
-		</div>
+      </div>
+    </div>
 
-	  </div>
-	</div>
-
-  </div>
-</section>
+    </div>
+  </section>
+</main>
 
 <!-- FOOTER -->
 <footer class="py-10 px-8 md:px-20 text-neutral-500 text-sm">
   © Shobhit Kumar · High-Impact Video Editing
 </footer>
 
-<!-- SCROLL REVEAL SCRIPT -->
 <script>
+  // SCROLL REVEAL SCRIPT
   const reveals = document.querySelectorAll('.reveal');
 
   const observer = new IntersectionObserver(entries => {
@@ -554,10 +606,8 @@
   }, { threshold: 0.15 });
 
   reveals.forEach(el => observer.observe(el));
-</script>
 
-<!-- NAVBAR FADE IN SCRIPT -->
-<script>
+  // NAVBAR FADE IN SCRIPT
   const nav = document.getElementById('miniNav');
 
   window.addEventListener('scroll', () => {
@@ -567,10 +617,8 @@
       nav.classList.add('opacity-0', 'pointer-events-none');
     }
   });
-</script>
 
-<!-- SCROLLSPY SCRIPT -->
-<script>
+  // SCROLLSPY SCRIPT
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
