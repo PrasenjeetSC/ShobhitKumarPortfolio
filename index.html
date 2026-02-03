@@ -476,22 +476,35 @@
           “The edits were impactful, perfectly timed, and elevated the entire event.”
         </p>
 
-        <form class="space-y-6 max-w-xl">
-          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-                placeholder="Name">
-          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-                placeholder="Email or WhatsApp">
-          <select class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500">
-            <option>Wedding</option>
-            <option>Event</option>
-            <option>Brand / Reel</option>
-          </select>
-          <textarea class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
-                    placeholder="Message (optional)"></textarea>
+        <form action="https://api.web3forms.com/submit" 
+              method="POST" 
+              class="space-y-6 max-w-xl">
 
-          <button class="border border-neutral-300 px-6 py-3 hover:bg-neutral-100 hover:text-neutral-900 transition">
+          <input type="hidden" name="access_key" value="ad0f2d4a-e8c1-470d-842a-5ff37bfeeaa0">
+
+          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                placeholder="Name"
+                type="text"
+                name="name"
+                id="name"
+                required>
+
+          <input class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                placeholder="Email"
+                type="email"
+                name="email"
+                id="email"
+                required>
+
+          <textarea class="w-full bg-neutral-800 p-3 outline-none focus:ring-2 focus:ring-neutral-500"
+                    placeholder="Message (optional)"
+                    id="message" name="message"></textarea>
+
+          <button type="submit"
+                  class="border border-neutral-300 px-6 py-3 hover:bg-neutral-100 hover:text-neutral-900 transition">
             Send Message
           </button>
+
         </form>
       </div>
 
